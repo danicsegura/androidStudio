@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView android:text="CPF"
+                android:textStyle="normal|bold"
+                android:id="@+id/lblcpf"
+                android:padding="1dip"
+                android:gravity="left"/>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:text=""
+                android:id="@+id/txtcpf"
+                android:gravity="left"
+                android:padding="1dip"
+                android:maxLength="14"
+                android:width="25dp"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Nome:"
+                android:textStyle="normal|bold"
+                android:id="@+id/lblnome"
+                android:padding="1dip"
+                android:gravity="left"/>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:text=""
+                android:id="@+id/txtnome"
+                android:gravity="left"
+                android:padding="1dip"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Idade:"
+                android:textStyle="normal|bold"
+                android:id="@+id/lblidade"
+                android:padding="1dip"
+                android:gravity="left"/>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:text=""
+                android:id="@+id/txtidade"
+                android:gravity="left"
+                android:padding="1dip"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/TextLinha01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/chkStar"
+                android:layout_centerHorizontal="true"
+                android:text="Seleciona seus filmes de interesses"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkSenhor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnDisplay"
+                android:text="Senhor dos Anéis"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/chkSenhor"
+                android:text="Game of Thrones"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/chkGame"
+                android:text="Star Wars"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/TextLinha02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Selecione seu gênero"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <RadioGroup android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton android:id="@+id/radioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"/>
+
+            <RadioButton android:id="@+id/radioF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminino"/>
+        </RadioGroup>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Mostrar em outra tela"
+                app:backgroundTint="#2196F3" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
