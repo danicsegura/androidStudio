@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Cadastrar"
+        android:title="Cadastrar"/>
+    <item android:id="@+id/Movimentos"
+        android:title="Movimentos"/>
+    <item android:id="@+id/Caixa"
+        android:title="Caixa"/>
+</menu>
