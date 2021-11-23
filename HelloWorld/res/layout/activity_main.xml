@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+        <TextView   android:id="@+id/textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_world"
+                    android:textSize="80px"
+                    android:textColor="#0000FF"
+                    android:textStyle="italic|bold"
+                    android:background="#DCDCDC"
+                    android:layout_alignParentTop="true"/>
+
+        <EditText   android:id="@+id/editView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="100px"
+                    android:layout_below="@id/textView"/>
+
+        <Button android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click!"
+                android:textSize="28px"
+                android:textColor="#12FF88"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editView"
+            android:text="@string/checkboxText"/>
+
+        <ToggleButton   android:id="@+id/toggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox"/>
+
+        <RadioGroup android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toggleButton">
+            <RadioButton    android:id="@+id/r1button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Opção 1"
+                            android:text-Size="28px"
+                            android:textColor="#12FF88"
+                            android:textStyle="italic|bold"/>
+
+            <RadioButton    android:id="@+id/r2button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Opção 2"
+                            android:text-Size="28px"
+                            android:textColor="#12FF88"
+                            android:textStyle="italic|bold"/>
+        </RadioGroup>
+
+        <ImageView  android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_below="@id/radioGroup"/>
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
